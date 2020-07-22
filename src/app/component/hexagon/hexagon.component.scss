@@ -1,0 +1,70 @@
+@use '../../scss/color';
+
+.why-us-section{
+  color: color.$black;
+}
+
+.bullet-wrap {
+  height: 200px;
+  justify-content: flex-start;
+  padding: 0 7px;
+}
+.hex-wrap {
+  display: inline-block;
+  height: 150px;
+  position: relative;
+  text-align: center;
+  width: 150px;
+  margin-top: 40px;
+}
+.hexagon {
+  background-color: color.$blue;
+  display: inline-block;
+  height: 100%;
+  width: calc(100% * 0.57735);
+}
+.hexagon:before {
+  background-color: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  top: 0;
+  transform: rotateZ(60deg);
+  width: inherit;
+}
+.hexagon:after {
+  background-color: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  top: 0;
+  transform: rotateZ(-60deg);
+  width: inherit;
+}
+
+@media (min-width: 960px) {
+  .bullet-wrap {
+    height: intial;
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .bullet-wrap {
+    height: 230px;
+  }
+}
+
+.icon{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40pt;
+  color: color.$white;
+}
+
+

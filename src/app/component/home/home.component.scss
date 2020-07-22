@@ -52,3 +52,23 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .call-to-action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+    .action-form {
+      text-align: center;
+      height: 40px;
+      width: 100%;
+      border-radius: 5px;
+      outline: none;
+      border: solid 1px color.$white;
+    }
+  }
+}
