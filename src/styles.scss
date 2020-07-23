@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+
 @font-face {
   font-family: raleway;
   src: url(assets/fonts/Raleway/Raleway-Regular.ttf) format("opentype");
@@ -47,6 +47,15 @@ h1{
 .label{
   font-size: 14pt;
 }
+
+.section-underline{
+  width: 65px;
+background-color: color.$pink;
+height: 3px;
+position: relative;
+margin: 30px auto;
+}
+
 .flex {
   align-items: center;
   display: flex;
