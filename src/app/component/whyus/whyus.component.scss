@@ -1,0 +1,12 @@
+@use '../../scss/color';
+
+.why-us-section{
+  color: color.$black;
+}
+.section-underline{
+  width: 65px;
+background-color: color.$pink;
+height: 3px;
+position: relative;
+margin: 30px auto;
+}

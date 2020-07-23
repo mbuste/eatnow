@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { HexagonComponent } from './component/hexagon/hexagon.component';
+import { WhyusComponent } from './component/whyus/whyus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HexagonComponent
+    HexagonComponent,
+    WhyusComponent
   ],
   imports: [
     BrowserModule,
