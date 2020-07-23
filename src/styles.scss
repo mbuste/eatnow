@@ -1,4 +1,4 @@
-
+@use './app/scss/color';
 @font-face {
   font-family: raleway;
   src: url(assets/fonts/Raleway/Raleway-Regular.ttf) format("opentype");
@@ -19,7 +19,7 @@
 body {
   margin: 0;
   font-family: "raleway";
-  color: #ffffff;
+  color: color.$white;
   text-align: center;
   width: 100vw;
   font-size: 8pt;
