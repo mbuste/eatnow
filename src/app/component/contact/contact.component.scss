@@ -1,0 +1,47 @@
+@use '../../scss/color';
+.contact-section {
+  background-color: color.$brown;
+  padding: 30px 0;
+
+}
+
+
+
+button{
+  display: block;
+  background-color: color.$pink;
+  color: color.$white;
+  font-size: 20px;
+  width: inherit;
+  margin-top: 30px;
+  padding: 5px 20px ;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.contact-form{
+  text-align: left;
+
+  input[type="text"] {
+    display: block;
+    margin-top: 20px;
+    width: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: solid 1px color.$white;
+  }
+}
+.contact-info{
+  text-align: left;
+  background-color: color.$grey;
+  margin: 40px 20px;
+  height: 250px;
+  max-width: 250px;
+  border-radius: 5px;
+
+  div{
+    margin: 20px 20px;
+
+  }
+}

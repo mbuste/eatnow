@@ -8,6 +8,7 @@ import { HexagonComponent } from './component/hexagon/hexagon.component';
 import { WhyusComponent } from './component/whyus/whyus.component';
 import { CategoriesComponent } from './component/categories/categories.component';
 import { CategoryComponent } from './component/category/category.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CategoryComponent } from './component/category/category.component';
     HexagonComponent,
     WhyusComponent,
     CategoriesComponent,
-    CategoryComponent
+    CategoryComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
