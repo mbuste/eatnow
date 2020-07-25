@@ -1,5 +1,6 @@
 @use '../../scss/color';
 .categories-section{
+  position: relative;
   color: color.$black;
   margin-top: 40px;
   background-color: color.$lightgrey;
