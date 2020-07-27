@@ -1,0 +1,38 @@
+@use '../../scss/color';
+
+.footer {
+  padding: 40px 0;
+  height: 100px;
+  display: grid;
+  color: color.$black;
+  background-color: color.$white;
+}
+
+.bar{
+  width: 40px;
+  border: solid color.$pink 1px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 50px;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 80vw;
+
+  }
+}
+
+@media (min-width: 600px) {
+  .navbar {
+
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}

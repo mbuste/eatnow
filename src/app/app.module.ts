@@ -10,6 +10,7 @@ import { CategoriesComponent } from './component/categories/categories.component
 import { CategoryComponent } from './component/category/category.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { NavTopComponent } from './component/nav-top/nav-top.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavTopComponent } from './component/nav-top/nav-top.component';
     CategoriesComponent,
     CategoryComponent,
     ContactComponent,
-    NavTopComponent
+    NavTopComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
