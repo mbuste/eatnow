@@ -9,6 +9,7 @@ import { WhyusComponent } from './component/whyus/whyus.component';
 import { CategoriesComponent } from './component/categories/categories.component';
 import { CategoryComponent } from './component/category/category.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { NavTopComponent } from './component/nav-top/nav-top.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactComponent } from './component/contact/contact.component';
     WhyusComponent,
     CategoriesComponent,
     CategoryComponent,
-    ContactComponent
+    ContactComponent,
+    NavTopComponent
   ],
   imports: [
     BrowserModule,

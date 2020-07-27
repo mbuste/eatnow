@@ -14,8 +14,17 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
+
     <app-root></app-root>
+    <div class="cursor"></div>
   </body>
+  <script>
+
+    const cursor = document.querySelector(".cursor");
+
+    document.addEventListener("mousemove", e => {
+        cursor.setAttribute("style", "top: " + e.pageY + "px; left: " + e.pageX + "px;")
+    })</script>
 
   <script
     src="https://kit.fontawesome.com/0e79d04314.js"
