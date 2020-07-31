@@ -9,7 +9,13 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
 
+  isShown:boolean =false;
   ngOnInit(): void {
   }
+
+  slideMenu(){
+      this.isShown = !this.isShown;
+      console.log(this.isShown)
+    }
 
 }

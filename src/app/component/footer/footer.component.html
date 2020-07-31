@@ -1,4 +1,12 @@
-<div class="footer">
+<div class="navbar">
+  <i (click)="slideMenu()" class="menu-mobile fas fa-bars"></i>
+  <div>eatnow</div>
+
+  <div class="full-screen-nav-item">sign up</div>
+  <div class="full-screen-nav-item">sign in</div>
+</div>
+
+<div [style.left]="isShown ? '0' : '-100%'" class="footer">
   <div class="top">
     <div class="">Eatnow</div>
     <div class="mobile-menu">sign up</div>
