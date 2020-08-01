@@ -1,15 +1,41 @@
 @use '../../scss/color';
 
-.footer {
-  padding: 40px 0;
-  height: 100px;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  background-color: transparent;
+  padding: 20px 0;
   display: grid;
-  color: color.$black;
-  background-color: color.$white;
+  grid-template-columns: 1fr 1fr;
 }
 
-.bar{
-  width: 40px;
+.footer {
+  padding: 20px 0;
+  height: 60px;
+  color: color.$black;
+  background-color: color.$white;
+  font-size: 13pt;
+
+  .mobile-menu {
+    margin: 10px 0;
+  }
+  .menu-item-bottom {
+    margin: 10px 0;
+  }
+  .fab {
+    margin-right: 30px;
+  }
+  .fa-window-close {
+    float: right;
+    margin-top: 10px;
+  }
+}
+
+.bar {
+  width: 30px;
   border: solid color.$pink 1px;
 }
 
@@ -17,56 +43,45 @@
   .footer {
     position: fixed;
     top: 0;
+    z-index: 2;
+    opacity: 0.98;
     text-align: left;
-    padding: 50px;
-    grid-template-columns: 1fr;
+    padding: 20px;
     height: 100vh;
-    width: 80vw;
-    transition: all .5s ease-out;
+    width: 90vw;
+    transition: all 0.5s ease-out;
 
+    .top {
+      height: 85%;
+    }
   }
 }
 
 @media (min-width: 600px) {
   .navbar {
+    grid-template-columns: 80% 10% 10%;
+    padding: 50px 200px;
+    text-align: left;
 
+    .fas {
+      display: none;
+    }
+  }
+
+  .bottom {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   .mobile-menu {
     display: none;
   }
-}
-
-
-
-
-.navbar{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100vw;
-  background-color: transparent;
-  padding: 50px 0;
-  display: grid;
-grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (max-width: 600px) {
-
-.full-screen-nav-item{
-  display: none;
- }
-}
-@media screen and (min-width: 600px) {
-.navbar{
-  grid-template-columns: 80% 10% 10%;
-  padding: 50px 200px;
-  text-align: left;
-
-  .fas{
+  .bar {
     display: none;
   }
 }
-}
 
+@media screen and (max-width: 600px) {
+  .full-screen-nav-item {
+    display: none;
+  }
+}

@@ -37,6 +37,7 @@ body {
   height: 50px;
   transition: 200ms ease-out;
   transform: translate(-50%, -50%);
+  visibility: hidden;
 }
 
 
@@ -81,7 +82,7 @@ margin: 30px auto;
     line-height: 18pt;
   }
   .cursor{
-    visibility: hidden;
+    visibility: visible;
   }
   .label {
     font-size: 18pt;

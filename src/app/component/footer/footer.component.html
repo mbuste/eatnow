@@ -1,5 +1,8 @@
 <div class="navbar">
-  <i style="height: 40px; width: 50px;" (click)="slideMenu()" class="menu-mobile fas fa-bars"></i>
+  <i
+    (click)="slideMenu()"
+    class="menu-mobile fas fa-bars"
+  ></i>
   <div>eatnow</div>
 
   <div class="full-screen-nav-item">sign up</div>
@@ -8,12 +11,20 @@
 
 <div [style.left]="isShown ? '0' : '-100%'" class="footer">
   <div class="top">
-    <div class="">Eatnow</div>
-    <div class="mobile-menu">sign up</div>
-    <div class="mobile-menu">sign in</div>
+    <i (click)="slideMenu()" class="far fa-window-close"></i>
+
+    <div class="mobile-menu medium">Eatnow</div>
+    <div class="mobile-menu medium">sign up</div>
+    <div class="mobile-menu medium">sign in</div>
   </div>
   <div class="bottom">
-    <div class="mobile-menu bar"></div>
-    <div>About EatNow</div>
+    <div style="margin-bottom: 10px;" class="bar"></div>
+    <div class="menu-item-bottom">EatNow</div>
+    <div class="menu-item-bottom">About EatNow</div>
+    <div>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
   </div>
 </div>

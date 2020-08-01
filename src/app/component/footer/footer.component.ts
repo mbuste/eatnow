@@ -15,7 +15,6 @@ export class FooterComponent implements OnInit {
 
   slideMenu(){
       this.isShown = !this.isShown;
-      console.log(this.isShown)
     }
 
 }
